@@ -1,20 +1,16 @@
-# Skeleton Scripts
+# Data Scripts
 
-## 预先准备
+## Preparation
 
-### 安装openpose的docker镜像 
-docker版本： 19.03.12   
-如果版本不对，加载容器的时候会出错   
-docker仓库：https://hub.docker.com/r/cwaffles/openpose   
-docker常用指令：https://www.runoob.com/docker/docker-tutorial.html  
-**step1:安装docker**  
-使用官方安装脚本自动安装:   
+### Install the docker image of openpose 
+Docker repository：https://hub.docker.com/r/cwaffles/openpose   
+Docker common commands：https://www.runoob.com/docker/docker-tutorial.html  
+**step1: install docker**  
+Automatic installation using official installation script:   
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun   
-手动安装   
-参考链接：https://www.runoob.com/docker/ubuntu-docker-install.html   
   
-**step2:安装NVIDIA CONTAINER RUNTIME** 
-新建一个脚本文件 vim nvidia.sh 填入如下内容:   
+**step2: Install NVIDIA CONTAINER RUNTIME** 
+Create a new script file vim nvidia.sh and fill in the following content:   
 sudo curl -s -L https://nvidia.github.io/nvidia-container-runtime/gpgkey | \
   sudo apt-key add -
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
